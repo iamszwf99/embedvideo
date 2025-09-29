@@ -171,14 +171,7 @@
             padding: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .video-wrapper {
-            width: 100%;
-            height: 400px;
-            border-radius: 15px;
-            overflow: hidden;
-            background: #000;
+            margin-bottom: 40px;
         }
 
         .background-elements {
@@ -322,13 +315,34 @@
             <a href="#register" class="cta-button">Register now</a>
         </div>
         
+        <!-- First video: 600x338 -->
         <div class="video-container">
-            <div class="video-wrapper">
-                <script src="https://zestatic.zoom.us/zoomevents-vod-sdk/0.1.6/vod_embed_sdk/zoomVodEmbed.js"></script>
-<div class="zoom-embed" data-channel-id="1j-1-kzuS7SwU_pwoTguFA" data-embed-option="inline" data-domain="https://events.zoom.us" data-resource-type="WEB_CAMPAIGN_VIDEO" data-resource-id="g4S4QDXaTMq8FNWypbYfOQ" style="width: 100%; height: 100%;"><img src="https://file-paa.zoom.us/pEfG3ohwRs24TLwv6qZpFA/Mi4zLvV3f1kqxyeUoQZ8MITC-Tt0Kl7PkVgsod_1t5ig83bp/public_thumbnail.jpeg?attachType=preview&amp;response-cache-control=max-age%3D5&amp;subType=1920x1920&amp;v=1755580262107" style="width:100%;"></div>
+            <script src="https://zestatic.zoom.us/zoomevents-vod-sdk/0.1.8/vod_embed_sdk/zoomVodEmbed.js"></script>
+            <div class="zoom-embed" 
+                data-channel-id="7lWxccQ1RLmWBGlYCwXZ5g" 
+                data-embed-option="inline" 
+                data-domain="https://events.zoom.us" 
+                data-resource-type="WEB_CAMPAIGN_VIDEO" 
+                data-resource-id="eaFWxVuWTJiSANjQCzeFEA" 
+                style="width: 100%; height: 100%; max-width: 600px; max-height: 338px; overflow: hidden;">
+                <img src="https://file-paa.zoom.us/39JyyXOpSvySv4T6mb-5SQ/Mi4zLsBgOdLll1EjLns5P0XZYUOSuwfXaw3dUhenrlGTmqnP/public_thumbnail.jpeg?response-cache-control=max-age%3D5&amp;v=1759168441415" style="width:100%;">
             </div>
         </div>
-    </main>
 
+        <!-- Second video: 800x420 -->
+        <div class="video-container">
+            <script src="https://zestatic.zoom.us/zoomevents-vod-sdk/0.1.8/vod_embed_sdk/zoomVodEmbed.js"></script>
+            <div class="zoom-embed" 
+                data-channel-id="7lWxccQ1RLmWBGlYCwXZ5g" 
+                data-embed-option="inline" 
+                data-domain="https://events.zoom.us" 
+                data-resource-type="WEB_CAMPAIGN_VIDEO" 
+                data-resource-id="QW3aFqhwQhWbWMrvIFazGQ" 
+                style="width: 100%; height: 100%; max-width: 800px; max-height: 420px; overflow: hidden;">
+                <img src="https://file-paa.zoom.us/M96h_fe-RPSlNTxmKUq3tg/Mi4zLkOYaRRsQF249o9SnPOO9ulZnRhjdcVzc7ISk5CY-sDu/public_thumbnail.jpeg?response-cache-control=max-age%3D5&amp;v=1759168552098" style="width:100%;">
+            </div>
+        </div>
+
+    </main>
 </body>
 </html>
