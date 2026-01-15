@@ -1,71 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kaltura Dynamic Embed - Configurable Player</title>
-
-  <!-- Step 1: Load the Kaltura player script -->
-  <script src="https://cdnapisec.kaltura.com/p/4834032/embedPlaykitJs/uiconf_id/50952692"></script>
-
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: 2rem auto; }
-    label { display: block; margin-top: 1rem; }
-    input { width: 100%; padding: 0.5rem; }
-    button { margin-top: 1rem; padding: 0.6rem 1.2rem; }
-    #player-container { margin-top: 2rem; min-height: 360px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #999; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Kaltura Embed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+<body style="margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; background: #f5f5f5;">
 
-<body>
-  <h1>Kaltura Dynamic Embed Example</h1>
+  <!-- Kaltura Embed Script -->
+  <script src="https://api.irp2.ovp.kaltura.com/p/179/sp/17900/embedIframeJs/uiconf_id/23458554/partner_id/179"></script>
 
-  <!-- Configuration fields -->
-  <label>Partner ID:</label>
-  <input id="partnerId" placeholder="e.g. 1234567" />
+  <!-- Player Container -->
+  <div id="kaltura_player_1768502196" style="width: 528px; height: 327px; background: #000;"></div>
 
-  <label>UIConf ID:</label>
-  <input id="uiconfId" placeholder="e.g. 23448071" />
-
-  <label>Video Entry ID:</label>
-  <input id="entryId" placeholder="e.g. 1_abcdxyz" />
-
-  <label>Access Key (KS):</label>
-  <input id="ks" placeholder="optional for public videos" />
-
-  <button id="playBtn">Load Video</button>
-
-  <!-- Step 2: Placeholder for the player -->
-  <div id="player-container">Player will load here...</div>
-
+  <!-- Player Init -->
   <script>
-    document.getElementById('playBtn').addEventListener('click', () => {
-      const partnerId = document.getElementById('partnerId').value.trim();
-      const uiconfId = document.getElementById('uiconfId').value.trim();
-      const entryId = document.getElementById('entryId').value.trim();
-      const ks = document.getElementById('ks').value.trim();
-
-      if (!partnerId || !uiconfId || !entryId) {
-        alert('Please fill in Partner ID, UIConf ID, and Entry ID.');
-        return;
-      }
-
-      // Step 3: Clear any previous player
-      document.getElementById('player-container').innerHTML = '';
-
-      // Step 4: Dynamically embed the player
-      kWidget.embed({
-        targetId: 'player-container',
-        wid: '_' + partnerId,
-        uiconf_id: uiconfId,
-        entry_id: entryId,
-        flashvars: {
-          ks: ks || undefined // pass KS only if provided
-        },
-        params: {
-          wmode: 'transparent'
-        }
-      });
+    kWidget.embed({
+      targetId: "kaltura_player_1768502196",
+      wid: "_179",
+      uiconf_id: 23458554,
+      flashvars: {},
+      cache_st: 1768502196,
+      entry_id: "0_4lvxerl5"
     });
   </script>
+
 </body>
 </html>
