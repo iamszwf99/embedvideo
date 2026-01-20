@@ -2,28 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Kaltura Embed</title>
+  <title>Zoom Video Embed</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Zoom Events VOD Embed SDK -->
+  <script src="https://zestatic.zoom.us/zoomevents-vod-sdk/0.1.9/vod_embed_sdk/zoomVodEmbed.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .zoom-embed {
+      font-size: 18px;
+      color: #0b5cff;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body style="margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; background: #f5f5f5;">
+<body>
 
-  <!-- Kaltura Embed Script -->
-  <script src="https://api.irp2.ovp.kaltura.com/p/179/sp/17900/embedIframeJs/uiconf_id/23458554/partner_id/179"></script>
-
-  <!-- Player Container -->
-  <div id="kaltura_player_1768502196" style="width: 528px; height: 327px; background: #000;"></div>
-
-  <!-- Player Init -->
-  <script>
-    kWidget.embed({
-      targetId: "kaltura_player_1768502196",
-      wid: "_179",
-      uiconf_id: 23458554,
-      flashvars: {},
-      cache_st: 1768502196,
-      entry_id: "0_4lvxerl5"
-    });
-  </script>
+  <div
+    class="zoom-embed"
+    data-channel-id="TYxgn1TQQh6WzDBfsMH3Fw"
+    data-embed-option="popover"
+    data-embed-display="text"
+    data-domain="https://events.zoom.us"
+  >
+    Click to watch the video
+  </div>
 
 </body>
 </html>
